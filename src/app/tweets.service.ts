@@ -11,7 +11,7 @@ export class TweetsService {
   constructor(private http: Http) { }
 
   getTweets(keyword: string) {
-    const url = 'https://tweetstorm-tim-freebern.herokuapp.com/tweets?keyword=${keyword}';
+    const url = 'https://twitter-api-tim-freebern.herokuapp.com/tweets?keyword=${keyword}';
     return this.http.get(url)
     .map(this.extractData)
     .catch(this.handleError);

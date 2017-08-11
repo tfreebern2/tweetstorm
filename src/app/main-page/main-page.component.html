@@ -4,4 +4,6 @@
   main-page works!
 </p>
 
-{{tweets | json}}
+<div *ngFor="let tweet of tweets">
+  {{tweet.text}}
+</div>
